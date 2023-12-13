@@ -6,7 +6,7 @@ import nltk
 import itertools
 import numpy as np
 
-directory_path = 'D:\HTTT\data\data'  # Đường dẫn tới thư mục chứa dữ liệu
+directory_path = 'D:\HTTT\HTDTTT\data\data'  # Đường dẫn tới thư mục chứa dữ liệu
 def get_user_input():   # Hàm lấy dữ liệu từ bàn phím
     words = input("Nhập các từ rời rạc cách nhau bằng dấu phẩy: ")
     word_list = words.split(", ")
