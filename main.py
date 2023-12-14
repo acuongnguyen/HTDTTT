@@ -87,7 +87,7 @@ while True:
 
     grammar_string_2= "\n".join([
             "S -> NP VP",
-            "NP -> NUN | UNN | NNN | CD NN | NNP | PRP | NP RB JJ",
+            "NP -> N UN | UNN | NNN | CD NN | NNP | PRP | NP RB JJ",
             "VP -> VB | VB NVP | VB INN | RB VB UNN | RB VB NVP | C NVP | VB NN | NN | ADJP VB",
             "NVP -> UN NN | VB VP | NN JJ | CD NN | CD NVP | RB JJ | NNN ADJP | NNN JJ ADJP | NNN | CD UNN",
             "NNN -> NN NN",
@@ -155,6 +155,5 @@ while True:
                         valid_sentences_count += 1
                         if valid_sentences_count == max_valid_sentences:
                             break  # Đã tìm thấy đủ câu hợp lệ, thoát vòng lặp
-
-            print(f"Đã tìm thấy {max_valid_sentences} câu hợp lệ.")
+            # print(f"Đã tìm thấy {max_valid_sentences} câu hợp lệ.")
     break
